@@ -20,11 +20,15 @@ def option_parser(kwargs, *args):
 
 @compiler_decorator
 def khatri_rao_product(A, B):
+    A = np.ascontiguousarray(A)
+    B = np.ascontiguousarray(B)
     k = A.shape[1]
 
     AB = A.reshape((-1,1,k)) * B.reshape((1,-1,k))
 
     return AB.reshape((-1, k))
+
+
 
 @compiler_decorator
 def khatri_rao_power(A, n):

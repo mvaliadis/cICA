@@ -135,7 +135,7 @@ def subspace_power_method(T, d=None, n=None, r=None, **kwargs):
         A[:, k] = Ak
         w[k] = 1. / (alpha.T @ D1alpha)
 
-        if k:
+        if k<r-1:
             # Calculate the new matrix D and the new subspace
             # Use Householder reflection to update V and D
             qr, tau, work, info = lapack.dgeqrf(D1alpha, overwrite_a=1)
