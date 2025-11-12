@@ -14,5 +14,4 @@ The code for justifying our choice of applying SPM then HTD for the three step c
 
 
 Data availability:
-We upload the mouse protein data from the paper 'Self-organizing feature maps identify proteins critical to learning in a mouse model of down syndrome'.
-And the preprocessed datasets for other real-world datasets. 
+We upload the mouse protein data from the paper 'Self-organizing feature maps identify proteins critical to learning in a mouse model of down syndrome' and the preprocessed datasets for other real-world datasets. 
