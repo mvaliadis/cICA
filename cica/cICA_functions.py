@@ -1,6 +1,6 @@
 import numpy as np
-from helper_functions import khatri_rao_power, tucker_product, symmetric_indices
-from SPM import subspace_power_method, generate_lowrank_tensor
+from .helper_functions import khatri_rao_power, tucker_product, symmetric_indices
+from .SPM import subspace_power_method, generate_lowrank_tensor
 # eigendecomposition that sorts by absolute eigenvalues
 def eig2(a):
     D, V = np.linalg.eigh(a)
