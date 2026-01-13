@@ -12,8 +12,8 @@ import scipy
 from scipy.linalg import svd, qr
 from sklearn.decomposition import FastICA
 
-from helper_functions import *
-from SPM import *
+from .helper_functions import *
+from .SPM import *
 
 
 

@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.linalg import lapack
-from helper_functions import *
+from .helper_functions import *
 from math import log, sqrt
 from time import time
 #import pprofile
@@ -133,7 +133,7 @@ def subspace_power_method(T, d=None, n=None, r=None, **kwargs):
 
         D1alpha = D1 @ alpha
         A[:, k] = Ak
-        w[k] = 1. / (alpha.T @ D1alpha)
+        w[k] = (1. / (alpha.T @ D1alpha))[0, 0]
 
         if k<r-1:
             # Calculate the new matrix D and the new subspace

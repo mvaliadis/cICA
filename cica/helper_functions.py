@@ -1,6 +1,6 @@
 import numpy as np
 from argparse import Namespace
-from compiler_options import compiler_decorator, dot, norm
+from .compiler_options import compiler_decorator, dot, norm
 import timeit
 from math import factorial
 from itertools import permutations

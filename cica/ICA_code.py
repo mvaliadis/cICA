@@ -1,5 +1,5 @@
 import numpy as np
-import helper_functions
+from . import helper_functions
 from PyMoments import kstat
 from itertools import product
 
